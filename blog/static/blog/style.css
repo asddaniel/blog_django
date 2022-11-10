@@ -1,6 +1,20 @@
-*{
+*, ::before, ::after{
 padding: 0px;
 margin: 0px;
+list-style: none;
+text-decoration: none;
+font-family: 'Montserrat',sans-serif
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    align-items: center;
+    font-size: 4vh;
+    
+}
+.clique{
+    
 }
 h1{
     background-color: royalblue;
