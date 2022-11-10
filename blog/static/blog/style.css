@@ -6,16 +6,56 @@ text-decoration: none;
 font-family: 'Montserrat',sans-serif
 }
 .nav-bar{
+    position: fixed;
+    width: 100%;
+    background-color: white;
     display: flex;
     justify-content: space-around;
     height: 10vh;
     align-items: center;
     font-size: 4vh;
+    box-shadow: 4px 2px 4px;
     
 }
+.content{
+    padding-top: 12vh;
+}
+.transitive{
+    transition: all 0.5s ease-in-out;
+}
 .clique{
-    
+    z-index: 200;
+    margin-left: 2vw;
+  position: absolute;
+  
+}
+
+.ligne{
+    background-color: red;
+    margin: 1vh;
+    display: block;
+    width: 16vw;
+    height: 2vh;
+}
+.hidden-main{
+    display: none;
 }
 h1{
     background-color: royalblue;
+}
+@media screen and (max-width:1200px){
+    .hidden-main{
+        display: block;
+    }
+    .nav-bar{
+        background-color: blue;
+        flex-direction: column;
+        height: 30vh;
+       
+    }
+    .hidden-responsive{
+        transform: translateX(120vh);
+        
+    }
+    
 }
