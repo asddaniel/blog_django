@@ -1,0 +1,13 @@
+
+
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<h1>Commenter l'article {{ article.name }}</h1>
+<form action="{% url 'treat_comment' article.id %}" method="post" novalidate>
+{% csrf_token %}
+{{ form.as_p }}
+<input type="hidden" name="article" value="{{ article.id }}">
+<input type="submit" value="commenter">
+ </form>
+{% endblock %}
