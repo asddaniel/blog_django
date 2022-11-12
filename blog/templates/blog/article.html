@@ -1,13 +1,20 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="contenu">
+    <div class="sidebar">
 <h1>{{ article.title }}</h1>
-<div><a href="{% url 'comment' article.id %}">commenter</a></div>
+<div><a href="{% url 'comment' article.id %}" class="button">commenter</a></div>
+</div>
+<div class="article-content">
 <p>{{ article.content }}</p>
-
+<div class="commentaires">
 {% for comment in comments %}
 <h3>{{ comment.user }}</h3>
-<div>{{ comment.content }}</div>
-<a href="{% url 'comment.modifier' comment.id %}">modifier</a>
+<div class="comment-content">{{ comment.content }}</div>
+<a href="{% url 'comment.modifier' comment.id %}" class="button">modifier</a>
 {% endfor %}
+</div>
+</div>
+</div>
 {% endblock %}

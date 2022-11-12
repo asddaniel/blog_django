@@ -1,8 +1,15 @@
 {%extends "blog/base.html" %}
-{%block content%}
+{%block content%}<div class="contenu"> 
+<div class="sidebar">
     <h1>teste de l'application django</h1>
+</div>
+<div class="article-content">
     {% for data in articles %}
    <a href="{% url 'article' data.id %}" class="href"> <h2>{{data.title | upper}}</h2></a>
     
     {% endfor %}
+</div>
+
+</div>
+
 {% endblock %}
