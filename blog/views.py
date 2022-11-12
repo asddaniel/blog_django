@@ -53,4 +53,7 @@ def modify_comment(request, id):
 def get_article(request):
     articles = Article.objects.all()
     return render(request, 'blog/articles.html', {'articles': articles})
+
+def post_article(request):
+    return render(request, 'blog/add.html')
     
