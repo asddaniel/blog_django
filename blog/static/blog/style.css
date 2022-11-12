@@ -89,6 +89,13 @@ font-family: 'Montserrat',sans-serif
     flex-direction: column;
     justify-content: space-around;
 }
+.form-input{
+    border: none;
+    height: 100%;
+    margin: 1vh;
+    width: 100%;
+    outline: 0.1px;
+}
 
 .ligne{
 
