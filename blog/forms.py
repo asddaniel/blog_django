@@ -5,6 +5,10 @@ class CommentForm(forms.Form):
     user = forms.CharField(max_length=255)
     content = forms.CharField(widget=forms.Textarea)
 
+class ArticleForm(forms.Form):
+    title = forms.CharField(max_length=50)
+    content = forms.CharField(widget=forms.Textarea)
+
 class CommentOriginalForm(forms.ModelForm):
     class Meta:
         model = Comment
