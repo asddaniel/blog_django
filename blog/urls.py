@@ -6,5 +6,5 @@ from blog import views
 
 urlpatterns = [
 path('articles/', views.get_article, name='article.all'),
-path('articles/add/', views.post_article)
+path('add/', views.post_article, name='article.add')
 ]
