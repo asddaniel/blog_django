@@ -106,10 +106,14 @@ font-family: 'Montserrat',sans-serif
 }
 .form-input{
     border: none;
+    
     height: 100%;
     margin: 1vh;
     width: 100%;
     outline: 0.1px;
+}
+.form-input:focus{
+    border-bottom: 0.5vh solid blue;
 }
 
 .ligne{
